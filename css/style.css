@@ -80,7 +80,7 @@ body {
   background-color: rgba(0,0,0,0);
   z-index: 9999;
   transition: 1s;
-  padding-top: 200px;
+  padding-top: 300px;
   text-align: center;
 }
 
@@ -98,9 +98,8 @@ body {
   width: 60%;
   opacity: 1;
   position: absolute;
-  right: 150px;
+  left: 183px;
   box-shadow: 0px 0px 10px black;
-  
 }
 .overlay:target img {
   opacity: 1;
@@ -111,15 +110,15 @@ body {
   text-align: center;
   line-height: 50px;
   display: block;
-  width: 100px;
+  width: 150px;
   height: 50px;
   text-shadow: 0px 0px black;
   position: absolute;
-  bottom: 180px;
-  left: 308px;
+  bottom: 340px;
+  left: 385px;
   text-decoration: none;
   color: #f4f0f0;
-  font-size: 30px;
+  font-size: 45px;
   box-shadow: 0px 0px 10px #000;
   background-color: #474545;
   opacity: 0;
@@ -129,22 +128,26 @@ body {
   animation: ataslalutampil .5s .5s forwards;
 }
 
-.overlay .next,
-.overlay .prev {
+.overlay .next {
   width: 60px;
   height: 60px;
   position: absolute;
   text-indent: -9999;
   background-image: url(../img/next.png);
-  bottom: 145px;
-  right: 240px;
+  bottom: 335px;
+  right: 315px;
   opacity: 0;
 }
 
 .overlay .prev {
   background-image: url(../img/prev.png);
-  bottom: 145px;
-  left: 240px;
+  left: 315px;
+  bottom: 335px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  text-indent: -9999;
+  opacity: 0;
 }
 
 .overlay:target .next {
@@ -173,7 +176,7 @@ body {
     opacity: 0;
   }
   100% {
-    bottom: 150px;
+    bottom: 1;
     opacity: 1;
   }
 }
@@ -194,7 +197,7 @@ body {
   }
   100% {
     opacity: 1;
-    right: 240px;
+    right: 1;
   }
 }
 
@@ -205,6 +208,6 @@ body {
   }
   100% {
     opacity: 1;
-    left: 240px;
+    left: 1;
   }
 }
